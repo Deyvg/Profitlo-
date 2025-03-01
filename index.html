@@ -245,6 +245,48 @@ p {
   margin-left:140px;
   margin-bottom: 50px;
 }
+.heart {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  background: #f20044;
+  transform: rotate(-45deg);
+  box-shadow: 15px 5px 150px 20px #f20044;
+  animation: heart 1.0s linear infinite;
+}
+.heart::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50%;
+}
+.heart::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f20044;
+  right: -50%;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    scale: 1.07;
+  }
+  80% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+    }
 
   </style>
 </head>
@@ -278,7 +320,8 @@ p {
     <div class="wishes">
     <p>Dear Gautami,</p>
     <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.</p>
-    <p class="name">mohit</p>
+    <div class="heart"></div>
+      <p class="name">mohit</p>
     </div>
   </div>
 </div>
