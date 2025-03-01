@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+  <title>HAPPY BIRTHDAY!</title>
   <style>
   body {
   display: flex;
@@ -249,7 +249,7 @@ p {
   </style>
 </head>
 <body>
-  <div class="birthdayCard">
+  <div class="birthdayCard" onclick="playAudio()">
 <div class="cardFront">
   <div class="front-text">
   <h3 class="happy">HAPPY</h3>
@@ -282,5 +282,20 @@ p {
     </div>
   </div>
 </div>
+  <audio id="myAudio" src="audio.mp3"></audio>
+
+
+<script>
+    window.onload = function() {
+        let audio = document.getElementById("myAudio");
+        setTimeout(() => {
+            audio.pause();
+        }, 26000); 
+    };
+  function playAudio() {
+    let audio = document.getElementById("myAudio");
+    audio.play();
+}
+</script>
 </body>
 </html>
