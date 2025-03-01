@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Button</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+        }
+
+        .cute-button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cute-button i {
+            font-size: 22px;
+        }
+
+        .cute-button:hover {
+            background-color: #ff1493;
+            transform: scale(1.1);
+        }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+    </style>
+</head>
+<body>
+  <h1>Happy birthday!</h1>
+    <button class="cute-button">
+        <i class="fas fa-heart"></i> <a href="main.html"> Click Me</a>
+    </button>
+
+</body>
+</html>
